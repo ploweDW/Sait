@@ -1,0 +1,269 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+/* ------- */
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+
+
+/*Сайд меню*/
+.allinone {
+    font-family: 'Comfortaa', serif;
+}
+
+.sidenav {
+    
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    font-family: 'Comfortaa', serif;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #c28eff;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+/* -------------------- */
+.content{
+  flex: 1 1 auto;
+}
+
+/* Шапка сайта */
+.header{
+    background-color: rgba(255, 255, 255, 0.734);
+    width: 100%;
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    align-items: center;
+}
+.header_logo{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.prdscont{
+    max-width: 1170px;
+    margin: center;
+    padding: 0 15px;
+    font-family: 'Comfortaa', serif;
+}
+.nav
+{
+        display: flex;
+    flex-wrap: wrap;
+    font-family: 'Comfortaa', serif;
+    font-size: 16px;
+    font-weight: 700;
+  
+    line-height: 171%;
+}
+
+.nav_link{
+    margin-left: 50px;
+    color: rgb(2, 25, 24);
+    text-decoration: none;
+}
+
+.nav_link:hover{
+    color: #9841fc;
+}
+.mtb-3{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+    margin: auto;
+}
+
+.prdtable{
+	width: 100%;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	border-collapse: collapse;
+	white-space: nowrap;
+}
+
+.prdtable th, .prdtable td{
+    text-align: center;
+    padding: 10px;
+}
+
+.prdtable th{
+    background-color: #7B52AB;
+    color: #201e20;
+}
+
+.prdtable th:nth-child(odd) {
+    background: #c28eff;
+}
+
+.prdtable tr:nth-child(even) {
+    background: #d3acff62;
+}
+
+.prdtable tr{
+	transition: all .3s;
+}
+
+.prdtable tr:hover{
+	background-color: #d3acff;
+}
+
+.prdtable td:not(:last-child){
+    border-right: 1px solid #d0a8ff;
+}
+
+/* .prdtable th:not(:last-child){
+    border-right: 1px solid #ccc;
+} */
+
+.prdtable-responsive{
+	overflow-x: auto;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+} 
+
+
+@media(max-width:480px)
+{
+    .form{
+        margin:0px 20px;
+        
+    }
+}
+.form_block{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', serif;
+}
+
+textarea{
+    border: 2px solid black;
+    width: 100%;
+    padding: 40px 0px;
+    border-radius: 5px;
+}
+input{
+    border: 2px solid black;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+form{
+    
+width:350px;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 16px black;
+  margin-bottom: 50px;
+  background-color: #fff;
+}
+.form_group{
+    position: relative;
+    margin-bottom: 30px;
+}
+.form_title{
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+.form_label{
+    position: absolute;
+    top: -21px;
+    left: 5px;
+
+}
+.form_input{
+    width: 100%;
+    padding: 5px 0px;
+    margin-top: 7px;
+    background-color: transparent;
+}
+.form_input:focus{
+    border: 3px solid darkslateblue;
+}
+.btn_primary{
+    font-weight: 700;
+    display: block;
+    padding: 10px 0px;
+  width: 160px;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius:50px;
+}
+
+.btn_primary:hover{
+    background-color:  #c28eff;
+}
+
+@import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
+@import url("https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css");
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-links a {
+    color: #333;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .contact-info a {
+    color: #333;
+    font-size: 16px;
+  } 
+  
+  .fab {
+    font-size: inherit;
+  } 
